@@ -1,11 +1,10 @@
 html {
 background-color: #fca7dd;
+font-family: "serif"
 }
 
 h1 {
 font-size: 35px;
-font-family: "Times";
-font-family: "serif";
 color: white;
 border: 5px dotted white;
 text-align: center;
