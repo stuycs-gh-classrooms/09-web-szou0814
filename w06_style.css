@@ -6,8 +6,8 @@ h1 {
 font-size: 35px;
 font-family: "Times";
 font-family: "serif";
-color: white
-border: 5px dotted #f7e56a;
+color: white;
+border: 5px dotted white;
 text-align: center;
 }
 
@@ -21,6 +21,7 @@ color: #f7e56a
 ul {
 font-size: 20px:
 list-style-type: square;
+color: white;
 }
 
 a {
