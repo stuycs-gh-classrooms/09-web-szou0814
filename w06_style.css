@@ -1,17 +1,17 @@
 html {
-background-color: #fca7dd
+background-color: #fca7dd;
 }
 
 h1 {
-text-align: center
+text-align: center;
 }
 
 h1, 
 p {
-color: white
+color: white;
 }
 
 img {
-width: 100px
-height: 340px
+max-width: 100%;
+height: auto;
 }
