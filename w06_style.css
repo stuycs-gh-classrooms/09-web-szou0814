@@ -3,21 +3,21 @@ background-color: #fca7dd;
 }
 
 h1 {
-font-size: 15px;
+font-size: 25px;
 text-align: center;
 }
 
 p {
-font-family: "Times";
 font-weight: bold;
 } 
 
 h1, 
 p {
+font-family: "Calibri"
 color: white;
 }
 
 img {
-width: 400px
-height: 340px
+width: 100px;
+height: 340px;
 }
