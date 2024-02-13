@@ -5,19 +5,25 @@ background-color: #fca7dd;
 h1 {
 font-size: 35px;
 font-family: "Times";
-font-family: "serif"
+font-family: "serif";
 border: 1px dotted white;
 text-align: center;
 }
 
 p {
-font-family: "monospace"
+font-size: 25px;
+font-family: "monospace";
 font-weight: bold;
 } 
 
 h1, 
 p {
 color: white;
+}
+
+li {
+font-size: 15px:
+font-style: italic;
 }
 
 img {
