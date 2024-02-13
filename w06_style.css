@@ -1,13 +1,13 @@
 html {
 background-color: #fca7dd;
-color: white;
 }
 
 h1 {
 font-size: 35px;
 font-family: "Times";
 font-family: "serif";
-border: 5px dotted white;
+color: white
+border: 5px dotted #f7e56a;
 text-align: center;
 }
 
@@ -15,6 +15,7 @@ p {
 font-size: 25px;
 font-family: "monospace";
 font-weight: bold;
+color: #f7e56a
 } 
 
 ul {
@@ -23,7 +24,7 @@ list-style-type: square;
 }
 
 a {
-color: #b1caf2;
+color: #719feb;
 }
 
 img {
