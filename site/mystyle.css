@@ -18,13 +18,11 @@ font-style: italic;
 }
 
 #indeximg0 {
-width: 95%;
-}
+width: 95%;}
 
 .center {
 display: block;
-margin: auto;
-}
+margin: auto;}
 
 .heading1 {
 text-align: center;
@@ -61,10 +59,13 @@ border-radius: 20px;
 }
 
 .information {
+display: flex;
 margin: auto;
+padding: 10px;
 width: 95%;
 background-color: #f6c049;
 border-radius: 20px;
+overflow: auto;
 }
 
 .heading2 {
@@ -78,5 +79,3 @@ color: #a16526;
 float: left;
 width: 15%
 }
-
-
