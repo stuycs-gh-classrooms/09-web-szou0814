@@ -17,14 +17,14 @@ h2 {
 font-style: italic;
 }
 
-#indeximg {
+#indeximg0 {
 width: 95%;}
 
 .center {
 display: block;
 margin: auto;}
 
-.heading2 {
+.heading1 {
 text-align: center;
 font-size: 30px;
 font-weight: bold;
@@ -56,6 +56,20 @@ color: #a16526;
 padding: 10px;
 background-color: #ffaf00;
 border-radius: 20px;
+}
+
+.information {
+margin: auto;
+width: 95%;
+background-color: #f6c049;
+border-radius: 20px;
+}
+
+.heading2 {
+text-align: center;
+font-size: 25px;
+font-weight: bold;
+color: #a16526;
 }
 
 
