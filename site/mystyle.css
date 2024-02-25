@@ -18,11 +18,13 @@ font-style: italic;
 }
 
 #indeximg0 {
-width: 95%;}
+width: 95%;
+}
 
 .center {
 display: block;
-margin: auto;}
+margin: auto;
+}
 
 .heading1 {
 text-align: center;
@@ -70,6 +72,11 @@ text-align: center;
 font-size: 25px;
 font-weight: bold;
 color: #a16526;
+}
+
+#indeximg1 {
+float: left;
+width: 15%
 }
 
 
