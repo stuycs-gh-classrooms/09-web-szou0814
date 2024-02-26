@@ -48,6 +48,12 @@ border-radius: 20px;
 display: inline;
 }
 
+.navoption a:hover{
+padding: 10px;
+background-color: #ffaf00;
+border-radius: 20px;
+}
+
 .navlink {
 color: #a16526;
 }
@@ -74,6 +80,7 @@ color: #a16526;
 }
 
 .text {
+padding: 5px;
 text-align: center;
 font-size: 20px;
 color: #a16526;
@@ -81,8 +88,14 @@ color: #a16526;
 
 .textlist {
 list-style-type: "\2605";
-font-size: 20px;
+font-size: 25px;
 color: #a16526;
+}
+
+.textlist a:hover {
+padding: 5px;
+background-color: #ffaf00;
+border-radius: 20px;
 }
 
 .textlink {
@@ -91,11 +104,15 @@ font-weight: bold;
 color: #a16526;
 }
 
+.italic {
+font-style: italic;
+} 
+
 #indeximg1 {
 margin: auto;
 padding: 10px;
 float: left;
 width: 25%;
+border-radius: 20px;
 }
-
 
