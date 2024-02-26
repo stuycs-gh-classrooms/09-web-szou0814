@@ -3,8 +3,7 @@ background-color: black;
 font-family: monospace;
  }
 
-h1,
-h2{
+h1 {
 margin: auto;
 text-align: center;
 width: 95%;
@@ -14,6 +13,12 @@ color: #a16526;
 }
 
 h2 {
+margin: auto;
+text-align: center;
+width: 95%;
+font-size: 35px;
+background-color: #f6c049;
+color: #a16526;
 font-style: italic;
 }
 
@@ -115,4 +120,3 @@ float: left;
 width: 25%;
 border-radius: 20px;
 }
-
