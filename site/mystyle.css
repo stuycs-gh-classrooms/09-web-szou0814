@@ -115,14 +115,7 @@ width: 25%;
 border-radius: 20px;
 }
 
-#p0img2 {
-margin: auto;
-padding: 10px;
-float: left;
-width: 35%;
-border-radius: 20px;
-}
-
+#p0img2,
 #p0img3 {
 margin: auto;
 padding: 10px;
@@ -130,3 +123,4 @@ float: left;
 width: 35%;
 border-radius: 20px;
 }
+
