@@ -115,11 +115,10 @@ width: 25%;
 border-radius: 20px;
 }
 
-#p0img2, {
+#p0img2 {
 margin: auto;
 padding: 10px;
-float: left;
-width: 300px;
+width: 25%;
 border-radius: 20px;
 }
  
@@ -127,7 +126,7 @@ border-radius: 20px;
 margin: auto;
 padding: 10px;
 float: left;
-width: 35%;
+width: 25%;
 border-radius: 20px;
 }
 
