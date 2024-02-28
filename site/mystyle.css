@@ -71,6 +71,13 @@ border-radius: 20px;
 overflow: auto;
 }
 
+.options {
+margin: auto;
+background-color: #f6c049;
+border-radius: 20px;
+overflow: auto;
+}
+
 .heading2 {
 text-align: center;
 font-size: 25px;
@@ -118,10 +125,11 @@ border-radius: 20px;
 #p0img2 {
 margin: auto;
 padding: 10px;
+float: left;
 width: 25%;
 border-radius: 20px;
 }
- 
+
 #p0img3 {
 margin: auto;
 padding: 10px;
@@ -129,4 +137,7 @@ float: left;
 width: 25%;
 border-radius: 20px;
 }
+
+
+ 
 
