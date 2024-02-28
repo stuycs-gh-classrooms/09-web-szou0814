@@ -53,7 +53,7 @@ border-radius: 20px;
 display: inline;
 }
 
-.navoption a:hover{
+.current {
 padding: 10px;
 background-color: #ffaf00;
 border-radius: 20px;
@@ -61,12 +61,6 @@ border-radius: 20px;
 
 .navlink {
 color: #a16526;
-}
-
-.current {
-padding: 10px;
-background-color: #ffaf00;
-border-radius: 20px;
 }
 
 .information {
@@ -97,16 +91,16 @@ font-size: 25px;
 color: #a16526;
 }
 
-.textlist a:hover {
-padding: 5px;
-background-color: #ffaf00;
-border-radius: 20px;
-}
-
 .textlink {
 font-size: 20px;
 font-weight: bold;
 color: #a16526;
+}
+
+a:hover {
+padding: 5px;
+background-color: #ffaf00;
+border-radius: 20px;
 }
 
 .italic {
@@ -120,4 +114,14 @@ float: left;
 width: 25%;
 border-radius: 20px;
 }
+
+#indeximg2 {
+margin: auto;
+padding: 10px;
+float: left;
+width: 35%;
+border-radius: 20px;
+}
+
+
 
