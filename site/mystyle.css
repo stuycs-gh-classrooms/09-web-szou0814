@@ -114,6 +114,10 @@ border-radius: 20px;
 font-style: italic;
 } 
 
+.bold {
+font-weight: bold;
+}
+
 #indeximg1 {
 margin: auto;
 padding: 10px;
@@ -135,6 +139,13 @@ margin: auto;
 padding: 10px;
 float: left;
 width: 25%;
+border-radius: 20px;
+}
+
+#p1img4 {
+margin: auto;
+padding: 10px;
+width: 100%;
 border-radius: 20px;
 }
 
