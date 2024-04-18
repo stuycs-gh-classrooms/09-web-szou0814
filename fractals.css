@@ -2,3 +2,13 @@ html {
 background-image: linear-gradient(#2e94b9, #f0fbff);
 font-family: serif;
  }
+
+.heading0 {
+ margin: auto;
+ text-align: center;
+ width: 95%;
+ font-size: 35px;
+ font-weight: bold;
+ background-color: #1b3c68;
+ color: #FFFFFF;
+}
