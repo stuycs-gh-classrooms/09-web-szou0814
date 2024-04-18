@@ -1,7 +1,7 @@
 html {
-height: 100%;
 background-image: linear-gradient(#2e94b9, #f0fbff);
 font-family: monospace;
+height: 100%;
  }
 
 h1 {
@@ -22,4 +22,12 @@ h2 {
  font-weight: bold;
  background-color: #acdcee;
  color: #FFFFFF;
+}
+
+.information {
+margin: auto;
+width: 95%;
+background-color: #f6c049;
+border-radius: 20px;
+overflow: auto;
 }
