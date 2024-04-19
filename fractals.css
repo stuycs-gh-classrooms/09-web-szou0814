@@ -46,6 +46,12 @@ font-size: 20px;
 color: #FFFFFF;
 }
 
+.textlist {
+list-style-type: "\2605";
+font-size: 25px;
+color: #8dd1f1;
+}
+
 #img {
 margin: auto;
 padding: 10px;
