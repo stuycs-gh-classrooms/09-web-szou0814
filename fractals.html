@@ -14,7 +14,7 @@
 
 <br> 
   
-<div class="information">
+<div class="kochcurve">
 <p class="heading">
 Sierpinski Triangle 
 </p>
@@ -36,10 +36,60 @@ Standard Koch Curve
 My modified version of the Koch Curve is meant to be a snowflake and includes the following modificaitons:
 </p>
 <ul>
-<li class="textlist">As depth decreases, the color of each depth 1 line randomly changes into one of seven options</li>
+<li class="textlist">As depth decreases, the color of each depth 1 line randomly changes into one of seven options.</li>
 <li class="textlist">Woah! Our snowflake is crystallizing! As depth decreases, two counters will increase by 1 and 0.05, respectively, for every depth. The initial given depth represents how large our snowflake is. If the snowflake has a depth of larger than 3, the first counter (c) will be greater than or equal to 2 and the snowflake will start to form crystals by stamping a turtle after every depth 1 line. The greater the initial given depth, the greater the second counter (s) and larger the crystals will be.</li>
- 
+<li class="textlist">Yipee! Our snowflake is growing! As depth decreases, the length and width will increase by 1.35x and 1.2x, respectively, for every depth. The initial given depth determines how large our snowflake is as it determines how many times the length and width will be multiplied.</li>
 </ul>
+<pre><code class="text">
+def pen_color(t):
+    x = random.randrange(0, 7)
+    if x == 0:
+        t.color('aquamarine')
+    elif x == 1:
+        t.color('aquamarine3')
+    elif x == 2:
+        t.color('cadetblue1')
+    elif x == 3:
+        t.color('cadetblue3')
+    elif x == 4:
+        t.color('lightblue1')
+    elif x == 5:
+        t.color('lightblue3')
+    else:
+        t.color('lightskyblue')
+        
+def crystals(t, c, s):
+    if c >= 2:
+        t.shape('arrow')
+        t.turtlesize(0.5 + s)
+        t.stamp()
+        t.shape('classic')
+        t.turtlesize(1)
+        
+def draw_koch_modified(t, depth, length, width, c, s):
+    pen_color(t)
+    t.width(width)
+    if depth == 1:
+        t.fd(length)
+        crystals(t, c, s)
+    if depth > 1:
+        draw_koch_modified(t, depth - 1, length * 1.35, width * 1.2, c + 1, s + 0.05)
+        t.lt(60)
+        draw_koch_modified(t, depth - 1, length * 1.35, width * 1.2, c + 1, s + 0.05)
+        t.rt(120)
+        draw_koch_modified(t, depth - 1, length * 1.35, width * 1.2, c + 1, s + 0.05)
+        t.lt(60)
+        draw_koch_modified(t, depth - 1, length * 1.35, width * 1.2, c + 1, s + 0.05)
+        
+def draw_koch_snowflake(t, depth, length, width, c, s):
+    i = 0
+    
+    while i < 3:
+        draw_koch_modified(t, depth, length, width, c, s)
+        t.rt(120)
+        
+        i += 1 
+</code></pre>
 </div>
  
 
