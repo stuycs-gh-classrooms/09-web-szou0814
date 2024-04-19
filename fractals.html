@@ -115,10 +115,12 @@ My modified version of the Tree is meant to be a tree representing the four seas
 </p>
 <ul>
 <li class="textlist">Oh, the seasons! As depth decreases, the color of the leaves randomly changes to represent each of the four seasons. When representing summer, the leaves are green. When representing spring, the leaves are pink, similar to cherry blossoms. When representing autumn, the leaves have a random, 50% chance of being orange or brown, similar to the falling autumn leaves. When representing winter, the leaves are brown, similar to a barren tree branch. The branches are always brown.</li>
-<li class="textlist">Watch out! Whenever depth decreases, lightning has a 1% success rate of striking tree branch, causing it to not be drawn. The greater the initial given depth, the greater the overall amount of branches that will likely be striken down due to lightning being given more chances.</li>
+<li class="textlist">Watch out! Whenever depth decreases, lightning has a 1% success rate of striking tree branch, causing it to not be drawn. The greater the initial given depth, the greater the overall amount of branches that will likely be striken down due to the lightning being given more chances.</li>
 <li class="textlist">It's just the natural way of life! As depth decreases, the width of the branches and the angle at which the branches are grown randomly changes to a number within a given range.</li>
 </ul>
 <pre class="text"><code>
+t.lt(90)
+ 
 def seasons(t):
     x = random.randrange(0, 4)
     if x == 0:
@@ -159,7 +161,79 @@ def tree_modified(t, depth, length):
 </code></pre>
 </div>
 
+<br>
 
+<div class = "sierpinskitriangle">
+<p class="heading">
+Sierpinski Triangle
+</p>
+
+<code class="text">draw_sierpinski(t, 5, 200)</code>
+<br>
+<img src="fractalsimg4.png" alt="Sierpinski Triangle: Standard" id="img">
+<br>
+<p class="text">
+Standard Sierpinski Triangle
+</p>
+
+<code class="text">draw_star(t, 5, 200, 2, 0)</code>
+<br>
+<img src="fractalsimg5.png" alt="Sierpinski Triangle: Modified" id="img">
+<br>
+<p class="text">
+My modified version of the Sierpinski Triangle is meant to be a star and includes the following modifications:
+</p>
+<ul>
+<li class="textlist">Even the brightest starts eventually burn out! As depth decreases, the RGB value of green increases, changing the color of the star from bright, deep red to lighter oranges. When the RGB value of green reaches 255, the star will begin to burn out and dim as it entirely becomes a light yellow. The initial given depth represents how old our star is. If the star has a greater depth, the greater the RGB value of green will be due to it being added to greater times. Each sierpinski triangle of one less depth that is drawn will sequentially add a greater value to the RGB value of green, providing a gradient effect.</li>
+<li class="textlist">It's the end of the world (literally)! As depth decreases, there is a 0.25% chance that a black hole will swallow the star and cause the turtle world to close. The greater the initial given depth, the greater the overall likelihood that a black hole will swallow the sun due to the black hole being given more chances.</li>
+<pre class="text"><code>
+def triangle(t, size):
+    t.lt(60)
+    t.fd(size)
+    t.rt(120)
+    t.fd(size)
+    t.rt(120)
+    t.fd(size)
+    t.rt(180)
+
+def draw_sierpinski_modified(t, depth, length, width, g):
+    t.width(width)
+    
+    if g < 255:
+        t.color(255, g, 0)
+    else:
+        t.color('yellow')
+
+    if depth == 1:
+        triangle(t, length)
+    if depth > 1:
+        draw_sierpinski_modified(t, depth - 1, length / 2, width, g + 10)
+        t.fd(length / 2)
+        draw_sierpinski_modified(t, depth - 1, length / 2, width, g + 40)
+        t.bk(length / 2)
+        t.lt(60)
+        t.fd(length / 2)
+        t.rt(60)
+        draw_sierpinski_modified(t, depth - 1, length / 2, width, g + 60)
+        t.rt(120)
+        t.fd(length / 2)
+        t.lt(120)
+        
+    x = random.randrange(0, 400)
+    if x == 0:
+        t.shape('circle')
+        t.turtlesize(length)
+        t.color('black')
+        t.stamp()
+        turtle.bye()
+
+def draw_star(t, depth, length, width, g):
+    draw_sierpinski_modified(t, depth, length, width, g)
+    t.fd(length)
+    t.lt(180)
+    draw_sierpinski_modified(t, depth, length, width, g)
+</code></pre>
+</div>
 
 </body>
 </html>
