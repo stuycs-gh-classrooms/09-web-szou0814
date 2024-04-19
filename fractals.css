@@ -45,6 +45,13 @@ border-radius: 20px;
 overflow: auto;
 }
 
+.tree {
+margin: auto;
+width: 95%;
+background-color: #74cafc;
+border-radius: 20px;
+overflow: auto;
+
 .text {
 padding: 5px;
 text-align: left;
