@@ -5,7 +5,7 @@ height: 100%;
 
 body {
 height: 100%;
-background: linear-gradient(#2e94b9, #f0fbff);
+background: linear-gradient(to top, #2e94b9, #f0fbff);
 background-repeat: no-repeat;
 }
 
