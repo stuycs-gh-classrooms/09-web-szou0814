@@ -27,7 +27,7 @@ h2 {
 .information {
 margin: auto;
 width: 95%;
-background-color: #f0fbff;
+background-color: #acdcee;
 border-radius: 20px;
 overflow: auto;
 }
@@ -38,3 +38,15 @@ font-size: 25px;
 font-weight: bold;
 color: #FFFFFF;
 }
+
+.center {
+display: block;
+margin: auto;
+}
+
+#img0 {
+margin: auto;
+padding: 10px;
+float
+width: 85%;
+
