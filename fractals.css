@@ -39,8 +39,11 @@ font-size: 20px;
 color: #FFFFFF;
 }
 
-#img0 {
+.block {
 display: block;
+}
+
+#img0 {
 margin: auto;
 padding: 10px;
 }
