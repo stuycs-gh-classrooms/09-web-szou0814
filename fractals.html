@@ -36,7 +36,7 @@ My modified version of the Koch Curve is meant to be a snowflake and includes th
 </p>
 <ul>
 <li class="textlist">As depth decreases, the color of each depth 1 line randomly changes into one of seven options.</li>
-<li class="textlist">Woah! Our snowflake is crystallizing! As depth decreases, two counters will increase by 1 and 0.05, respectively, for every depth. The initial given depth represents how large our snowflake is. If the snowflake has a depth of larger than 3, the first counter (c) will be greater than or equal to 2 and the snowflake will start to form crystals by stamping a turtle after every depth 1 line. The greater the initial given depth, the greater the second counter (s) and larger the crystals will be.</li>
+<li class="textlist">Woah! Our snowflake is crystallizing! As depth decreases, two counters will increase by 1 and 0.05, respectively, for every depth. The initial given depth represents how large our snowflake is. If the snowflake has a depth greater than 3, the first counter (c) will be greater than or equal to 2 and the snowflake will start to form crystals by stamping a turtle after every depth 1 line. The greater the initial given depth, the greater the second counter (s) and larger the crystals will be.</li>
 <li class="textlist">Yipee! Our snowflake is growing! As depth decreases, the length and width will increase by 1.35x and 1.2x, respectively, for every depth. The initial given depth determines how large our snowflake is as it determines how many times the length and width will be multiplied.</li>
 </ul>
 <pre class="text"><code>
@@ -115,8 +115,8 @@ My modified version of the Tree is meant to be a tree representing the four seas
 </p>
 <ul>
 <li class="textlist">Oh, the seasons! As depth decreases, the color of the leaves randomly changes to represent each of the four seasons. When representing summer, the leaves are green. When representing spring, the leaves are pink, similar to cherry blossoms. When representing autumn, the leaves have a random, 50% chance of being orange or brown, similar to the falling autumn leaves. When representing winter, the leaves are brown, similar to a barren tree branch. The branches are always brown.</li>
-<li class="textlist">Watch out! Whenever depth decreases, lightning has a 1% success rate of striking tree branch, causing it to not be drawn. The greater the initial given depth, the greater the overall amount of branches that will likely be striken down due to the lightning being given more chances.</li>
-<li class="textlist">It's just the natural way of life! As depth decreases, the width of the branches and the angle at which the branches are grown randomly changes to a number within a given range.</li>
+<li class="textlist">Watch out! Whenever depth decreases, lightning has a 1% success rate of striking a tree branch, causing it to not be drawn. The greater the initial given depth, the greater the overall amount of branches that will likely be striken down due to the lightning being given more chances.</li>
+<li class="textlist">It's just the natural way of life! As depth decreases, the width of the branches and the angle at which the branches are grown randomly change to a number within a given range.</li>
 </ul>
 <pre class="text"><code>
 t.lt(90)
@@ -184,8 +184,8 @@ Standard Sierpinski Triangle
 My modified version of the Sierpinski Triangle is meant to be a star and includes the following modifications:
 </p>
 <ul>
-<li class="textlist">Even the brightest starts eventually burn out! As depth decreases, the RGB value of green increases, changing the color of the star from bright, deep red to lighter oranges. When the RGB value of green reaches 255, the star will begin to burn out and dim as it entirely becomes a light yellow. The initial given depth represents how old our star is. If the star has a greater depth, the greater the RGB value of green will be due to it being added to greater times. Each sierpinski triangle of one less depth that is drawn will sequentially add a greater value to the RGB value of green, providing a gradient effect.</li>
-<li class="textlist">It's the end of the world (literally)! As depth decreases, there is a 0.25% chance that a black hole will swallow the star and cause the turtle world to close. The greater the initial given depth, the greater the overall likelihood that a black hole will swallow the sun due to the black hole being given more chances.</li>
+<li class="textlist">Even the brightest starts eventually burn out! As depth decreases, the RGB value of green increases, changing the color of the star from bright, deep red to lighter oranges. When the RGB value of green reaches 255, the star will begin to burn out and dim as it entirely becomes a light yellow. The initial given depth represents how old our star is. The greater the initial given depth, the greater the RGB value of green will be due to it being added to a greater number of times. Each sierpinski triangle of one less depth that is drawn will sequentially add a greater value to the RGB value of green, providing a gradient effect.</li>
+<li class="textlist">It's the end of the world (literally)! As depth decreases, there is a 0.25% chance that a black hole will swallow the star and cause the turtle world to close. The greater the initial given depth, the greater the overall likelihood that a black hole will swallow the star due to the black hole being given more chances.</li>
 </ul>
 <pre class="text"><code>
 def triangle(t, size):
