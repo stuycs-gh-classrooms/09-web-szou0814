@@ -16,11 +16,10 @@
   
 <div class="kochcurve">
 <p class="heading">
-Sierpinski Triangle 
+Koch Curve
 </p>
-</h2>
  
-<code class="text">draw_koch(bartholomew, 4, 20)</code>
+<code class="text">draw_koch(t, 4, 20)</code>
 <br>
 <img src="fractalsimg0.png" alt="Koch Curve: Standard" id="img">
 <br>
@@ -28,7 +27,7 @@ Sierpinski Triangle
 Standard Koch Curve
 </p>
 
-<code class="text">draw_koch_snowflake(bartholomew, 3, 10, 2, 0, 0)</code>
+<code class="text">draw_koch_snowflake(t, 3, 10, 2, 0, 0)</code>
 <br>
 <img src="fractalsimg1.png" alt="Koch Curve: Modified" id="img">
 <br>
@@ -91,7 +90,76 @@ def draw_koch_snowflake(t, depth, length, width, c, s):
         i += 1 
 </code></pre>
 </div>
- 
+
+<br>
+
+<div class = tree">
+<p class="heading">
+Tree
+</p>
+
+<code class="text">tree(t, 4, 50, 20)</code>
+<br>
+<img src="fractalsimg2.png" alt="Tree: Standard" id="img">
+<br>
+<p class="text">
+Standard Tree
+</p>
+
+<code class="text">tree_modified(t, 8, 100)</code>
+<br>
+<img src="fractalsimg3.png" alt="Tree: Modified" id="img">
+<br>
+<p class="text">
+My modified version of the Tree is meant to be a tree representing the four seasons and includes the following modifications:
+</p>
+<ul>
+<li class="textlist">Oh, the seasons! As depth decreases, the color of the leaves randomly changes to represent each of the four seasons. When representing summer, the leaves are green. When representing spring, the leaves are pink, similar to cherry blossoms. When representing autumn, the leaves have a random, 50% chance of being orange or brown, similar to the falling autumn leaves. When representing winter, the leaves are brown, similar to a barren tree branch. The branches are always brown.</li>
+<li class="textlist">Watch out! Whenever depth decreases, lightning has a 1% success rate of striking tree branch, causing it to not be drawn. The greater the initial given depth, the greater the overall amount of branches that will likely be striken down due to lightning being given more chances.</li>
+<li class="textlist">It's just the natural way of life! As depth decreases, the width of the branches and the angle at which the branches are grown randomly changes to a number within a given range.</li>
+</ul>
+<pre class="text"><code>
+def seasons(t):
+    x = random.randrange(0, 4)
+    if x == 0:
+        t.color('green')
+    elif x == 1:
+        t.color('hotpink')
+    elif x == 2:
+        y = random.randrange(0, 2)
+        if y == 0:
+            t.color('brown')
+        else:
+            t.color('orangered')
+    else:
+        t.color('brown')
+
+def tree_modified(t, depth, length):
+    t.width(random.randrange(1, 11))
+    angle = random.randrange(10, 45)
+    if depth == 1:
+        seasons(t)
+        t.fd(length)
+        t.bk(length)
+        t.color("brown")
+
+    else:
+        t.color("brown")
+        t.fd(length)
+        t.rt(angle)
+        a = random.randrange(0, 100)
+        if a != 0:
+            tree_modified(t, depth - 1, length * .75)
+        t.lt(angle * 2)
+        a = random.randrange(0, 100)
+        if a != 0:
+            tree_modified(t, depth - 1, length * .75)
+        t.rt(angle)
+        t.bk(length)
+</code></pre>
+</div>
+
+
 
 </body>
 </html>
