@@ -32,21 +32,9 @@ border-radius: 20px;
 overflow: auto;
 }
 
-.heading0 {
- text-align: center;
-font-size: 25px;
-font-weight: bold;
-color: #FFFFFF;
-}
-
-.center {
-display: block;
-margin: auto;
-}
-
 .text {
 padding: 5px;
-text-align: center;
+text-align: left;
 font-size: 20px;
 color: #FFFFFF;
 }
