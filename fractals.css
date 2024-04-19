@@ -31,3 +31,10 @@ background-color: #005874;
 border-radius: 20px;
 overflow: auto;
 }
+
+.heading0 {
+ text-align: center;
+font-size: 25px;
+font-weight: bold;
+color: #FFFFFF;
+}
