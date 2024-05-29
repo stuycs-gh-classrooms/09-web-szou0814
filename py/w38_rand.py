@@ -14,7 +14,6 @@ print('<b>', ans,'</b>', 'is the correct answer! Did you guess it right? +2 if y
 print('<br>' * 2)
 print('Here is a list of runner up answers:')
 print('<ul><li>', n1, '</li><li>', n2, '</li></ul>')
-print('<br>')
 print('+1 if you guessed any of them right!')
 print('<br>' * 2)
 print('Let us play again!')
